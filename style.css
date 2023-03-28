@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Raleway' ,'Open Sans';
+}
+
+body{
+    font-size: 11px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 70px;
+    
+}
+header nav a{
+    text-decoration: none;
+    position: relative;
+    color: black;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-right: 40px;
+    transition: 0.4s;
+}
+header nav a::after{
+    content: '';
+    position: absolute;
+    background-color: hsl(224, 93%, 58%);
+    bottom: 0;
+    left: 0;
+    transform: translateY(5px);
+    height: 2px;
+    width: calc(100% - 38px);
+    opacity: 0;
+    transition: 0.4s;
+}
+header nav a:hover:after{
+    opacity: 1;
+}
+header nav a:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+main , .second-section{
+    display: flex;
+    min-height: 100vh;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.main-info , .section-info{
+    padding: 75px 0 80px 70px;
+}
+.main-info h2 , .section-info h2 {
+    color: black;
+    font-size: 3.6em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.main-info p , .section-p p{
+    margin: 15px 0 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: hsl(238, 22%, 44%);
+    padding-right: 90px;
+    word-spacing: 2px;
+    line-height: 1.4em;
+}
+.main-info form{
+    display: flex;
+}
+.main-info form input{
+    width: 300px;
+    height: 45px;
+    padding-left: 16px;
+    color: hsl(238, 22%, 44%);
+    border: 0.5px rgba(255, 0, 0, 0.651) solid;
+    border-radius: 1px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.main-info form button{
+    color: white;
+    background-color: hsl(224, 100%, 62%);
+    width: 200px;
+    margin-left: 15px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.main-info form button:hover{
+    background-color: rgb(18, 150, 250);
+    box-shadow:2px 2px 2px 3px rgba(0, 0, 0, 0.144);
+}
+.main-info span{
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: red;
+}
+.main-img img{
+    height: 33vw;
+    width: 50vw;
+    padding-right: 70px;
+}
+.section-p{
+    margin-top: 40px;
+}
+.section-info a{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 155px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+}
+.section-info a:after{
+    content: '';
+    position: absolute;
+    background-color: hsl(170, 45%, 43%);
+    bottom: 0;
+    left: 0;
+    transform: translateY(7px);
+    height: 2px;
+    width: 100%;
+}
+.section-info .card{
+    margin-top: 50px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.089);
+}
+.section-info .card p{
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: hsl(238, 22%, 44%);
+    line-height: 1.4em;
+}
+.section-info .card .founder{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+.founder img{
+    border-radius: 50%;
+    width: 35px;
+}
+.founder-info{
+    margin-left: 12px;
+}
+.founder-info .name{
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.founder-info .description{
+    display: block;
+    margin-top: 2px;
+}
+.section-img img{
+    height: 25vw;
+    width: 40vw;
+    margin: 100px 0 0 50px;
+}
+
+.call-to-action{
+    display: flex;
+    background-color: hsl(238, 22%, 44%);
+}
+.section-description{
+    padding: 90px 80px;
+    width: 45%;
+}
+.section-description h2{
+    color: white;
+    font-size: 2.9em;
+    font-weight: bold;
+}
+.section-description p{
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: hsl(240, 75%, 98%);
+    line-height: 1.4em;
+}
+.section-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-form form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.section-form form input{
+    width: 35vw;
+    height: 45px;
+    padding-left: 16px;
+    color: hsl(238, 22%, 44%);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.section-form form span{
+    color: hsl(240, 75%, 98%);
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+.section-form form button{
+    color: white;
+    background-color: hsl(224, 100%, 62%);
+    margin-top: 15px;
+    width: 14vw;
+    height: 45px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.section-form form button:hover{
+    background-color: rgb(18, 150, 250);
+    box-shadow:2px 2px 2px 3px rgba(0, 0, 0, 0.144);
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    
+}
+footer{
+    padding: 90px 70px;
+}
+footer .footer-coontent{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+.footer-coontent .content div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color:hsl(240, 75%, 98%);
+    font-size: 1.3em;
+}
+
+.footer-coontent .content div span{
+    font-family: 'Open Sans';
+    margin-left: 20px;
+}
+.footer-coontent .content div a{
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+}
+.footer-coontent .content div a:hover{
+    color: hsl(224, 94%, 68%);
+}
+.footer-coontent .content div i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 1.2em;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+.footer-coontent .content div i:hover{
+    background-color: white;
+    color: hsl(243, 87%, 12%);
+}
+
+@media (max-width:825px){
+    footer{
+        padding-right: 0;
+    }
+    footer .footer-coontent{
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:660px){
+    header{
+        padding: 50px 2vw 50px 4vw;
+    }
+    header a img{
+        width: 26vw;
+    }
+    header nav a{
+        font-size: 3vw;
+        padding-right: 6vw;
+    }
+    header nav a:after{
+        width: calc(100% - 6vw)
+    }
+    main ,.second-section{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .second-section{
+        padding-top: 200px;
+    }
+    .main-img{
+        padding: 0 0 0 9vw;
+    }
+    .main-img img , .section-img img{
+        height: 100vw;
+        width: 100vw;
+        margin: 0;
+    }
+    .main-info , .section-info{
+        text-align: center;
+        padding: 0;
+    }
+    .section-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .main-info h2{
+        font-size: 6.7vw;
+    }
+    .section-info h2{
+        font-size: 5.3vw;
+        padding: 0 4vw;
+    }
+    .main-info p , .section-p p{
+        font-size: 4vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .section-p p{
+        text-align: left;
+        font-size: 3.7vw;
+    }
+    .main-info form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-info form input{
+        width: 90vw;
+        border-color: darkblue;
+        border-radius: 2px;
+    }
+    .main-info form button{
+        width: 90vw;
+        height: 45px;
+        margin: 20px 0;
+    }
+    .main-info span{
+        display: none;
+    }
+    .section-info a{
+        margin-top: 20px;
+    }
+    .card{
+        text-align: left;
+        width: 60vw;
+        margin-bottom: 70px;
+    }
+    .call-to-action{
+        flex-direction: column;
+    }
+    .section-description{
+        width: 100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        text-align: center;
+    }
+    .section-description p{
+        font-size: 3.8vw;
+    }
+    .section-form{
+        margin-bottom: 100px;
+    }
+    .section-form form{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .section-form form input{
+        width: 70vw;
+    }
+    .section-form form button{
+        width:70vw;
+    }
+    .section-form form span{
+        display: none;
+    }
+    .footer-coontent{
+        flex-direction: column;
+    }
+    .footer-coontent .content{
+        margin-top: 40px;
+    }
+    .footer-coontent .icons{
+        display: flex;
+        justify-content: center;
+    }
+}
